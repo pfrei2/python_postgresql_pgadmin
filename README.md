@@ -5,6 +5,7 @@
 - [Folder structure](#folder-structure)
 - [Run Docker containers](#run-docker-containers)
 - [Database credentials](#database-credentials)
+- [Know issues and how to solve them](#known-issues-and-how-to-solve-them)
 - [License and Credits](#license-and-credits)
 
 ## Folder Structure
@@ -42,6 +43,15 @@ Maintenance database: postgres
 Username: pgadmin
 Password: geheim
 ```
+
+# Known issues and how to solve them
+```bash
+1.) The pgadmin4 webpage cannot be opened
+- Check if both containers are running, if not, restart the containers.
+- Wait until the forwarded ports are visible in the Terminal.
+- Open pgadmin4 on port 5050.
+```
+
 
 ## License and credits
 This project is intended for educational/demo purposes.   
