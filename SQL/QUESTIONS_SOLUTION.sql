@@ -84,7 +84,7 @@ FROM Products;
 SELECT 
     ProductID, 
     ProductName, 
-    ROUND(CAST(Price AS NUMERIC), 2) AS Price
+    (ROUND(CAST(Price) AS NUMERIC), 2) AS Price
 FROM Products
 WHERE Price BETWEEN 10 AND 50
 ORDER BY Price DESC;
